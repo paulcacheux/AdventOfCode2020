@@ -69,8 +69,7 @@ fn read_map(path: &str) -> AdventResult<TreeMap> {
     Ok(TreeMap { trees: lines })
 }
 
-pub fn day3_main() {
-    let path = "inputs/day3/input.txt";
+pub fn run(path: &str) {
     let tm = read_map(path).expect("Cannot read tree map");
     println!("day3 part1: {}", tm.part1_count());
     println!("day3 part2: {}", tm.part2_count());

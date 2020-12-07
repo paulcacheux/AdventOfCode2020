@@ -6,7 +6,7 @@ mod day2;
 mod day3;
 
 fn main() {
-    // day1::day1_main();
-    // day2::day2_main();
-    day3::day3_main();
+    day1::run("inputs/day1/input.txt");
+    day2::run("inputs/day2/input.txt");
+    day3::run("inputs/day3/input.txt");
 }

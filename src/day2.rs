@@ -58,8 +58,7 @@ fn read_password_file(path: &str) -> AdventResult<Vec<PasswordLine>> {
     Ok(lines)
 }
 
-pub fn day2_main() {
-    let path = "inputs/day2/input.txt";
+pub fn run(path: &str) {
     let rows = read_password_file(path).expect("Cannot read input file");
 
     let part1 = rows.iter().filter(|pl| pl.is_valid_part1()).count();

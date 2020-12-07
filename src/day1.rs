@@ -34,8 +34,7 @@ fn find_sum_of_3(values: &[u32]) -> Option<(u32, u32, u32)> {
     None
 }
 
-pub fn day1_main() {
-    let path = "inputs/day1/input.txt";
+pub fn run(path: &str) {
     let values = read_input(path).expect("Cannot read input file");
 
     if let Some((a, b)) = find_sum_of_2(&values) {
