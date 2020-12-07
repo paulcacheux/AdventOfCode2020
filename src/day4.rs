@@ -115,24 +115,6 @@ fn read_passport(lines: &[&str]) -> PassportInfo {
     info
 }
 
-fn split_blocks(content: &str) -> Vec<Vec<&str>> {
-    let mut blocks = Vec::new();
-    let mut current_block = Vec::new();
-    for line in content.lines() {
-        if line.trim().is_empty() && !current_block.is_empty() {
-            blocks.push(current_block);
-            current_block = Vec::new();
-        } else {
-            current_block.push(line);
-        }
-    }
-
-    if !current_block.is_empty() {
-        blocks.push(current_block);
-    }
-    blocks
-}
-
 fn read_passports(path: &str) -> AdventResult<Vec<PassportInfo>> {
     let content = std::fs::read_to_string(path)?;
 
