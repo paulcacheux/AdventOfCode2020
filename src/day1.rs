@@ -39,14 +39,14 @@ pub fn day1_main() {
     let values = read_input(path).expect("Cannot read input file");
 
     if let Some((a, b)) = find_sum_of_2(&values) {
-        println!("day1: {}", a * b);
+        println!("day1 part1: {}", a * b);
     } else {
-        println!("day1: no solution found")
+        println!("day1 part1: no solution found")
     }
 
     if let Some((a, b, c)) = find_sum_of_3(&values) {
-        println!("day2: {}", a * b * c);
+        println!("day1 part2: {}", a * b * c);
     } else {
-        println!("day2: no solution found")
+        println!("day1 part2: no solution found")
     }
 }
