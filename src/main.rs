@@ -8,6 +8,7 @@ mod day4;
 mod day5;
 mod day6;
 mod day7;
+mod day8;
 
 fn main() {
     day1::run("inputs/day1/input.txt");
@@ -17,4 +18,5 @@ fn main() {
     day5::run("inputs/day5/input.txt");
     day6::run("inputs/day6/input.txt");
     day7::run("inputs/day7/input.txt");
+    day8::run("inputs/day8/input.txt");
 }
