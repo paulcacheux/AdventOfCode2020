@@ -5,6 +5,7 @@ mod day1;
 mod day10;
 mod day11;
 mod day12;
+mod day13;
 mod day2;
 mod day3;
 mod day4;
@@ -27,6 +28,7 @@ fn main() {
     day9::run("inputs/day9/input.txt");
     day10::run("inputs/day10/input.txt");
     day11::run("inputs/day11/input.txt");
-    */
     day12::run("inputs/day12/input.txt");
+    */
+    day13::run("inputs/day13/input.txt");
 }
